@@ -1,15 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
+
+const square = (props) => (  <button style={{width:"50px",height:"50px"}}
+                                onClick={props.buttonClickHandler}>
+                                {props.value}
+                            </button>
+                        )
+
+export default square                    
 
 
-export default class Square extends Component{
-    render(){
-        return(
-            <div>
-                <button style={{width:"50px",height:"50px"}}
-                        onClick={this.props.buttonClickHandler}>
-                        {this.props.value}
-                </button>
-            </div>
-        );
-    }
-}
